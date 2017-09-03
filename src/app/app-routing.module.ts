@@ -1,12 +1,10 @@
 import {NgModule} from '@angular/core';
-import {RouterModule,Routes} from '@angular/router';
-import { PlanManagementComponent } from './plan-management/plan-management.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import {RouterModule, Routes} from '@angular/router';
+import {PlanManagementComponent} from './plan-management/plan-management.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/planManagement', pathMatch: 'full' },
-    { path: 'planManagement',  component: PlanManagementComponent },
-    { path: 'sideBar',  component: SidenavComponent }
+  {path: 'planManagement', component: PlanManagementComponent}
 
 ];
 

@@ -1,23 +1,24 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {MaterialModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PlanManagementComponent} from './plan-management/plan-management.component';
-import {SidenavComponent} from './sidenav/sidenav.component';
+import {MdDialogModule, MdSidenavModule, MdSnackBarModule, MdToolbarModule} from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlanManagementComponent,
-    SidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MdSidenavModule,
+    MdToolbarModule,
+    MdDialogModule,
+    MdSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
