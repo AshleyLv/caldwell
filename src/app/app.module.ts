@@ -1,6 +1,6 @@
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {MdSidenavModule, MdToolbarModule} from '@angular/material';
+import {BrowserModule} from '@angular/platform-browser';
+import {MaterialModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -16,11 +16,12 @@ import {SidenavComponent} from './sidenav/sidenav.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MdSidenavModule,
     BrowserAnimationsModule,
-    MdToolbarModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

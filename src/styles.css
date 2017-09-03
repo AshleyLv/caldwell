@@ -1,12 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
-
+@import "normalize.css";
+@import "main.css";
 /* fallback */
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
   src: url('./assets/fonts/Material_Icons.woff2') format('woff2');
+}
+body{
+  margin:0;
+}
+.pull-right{
+  float:right;
+}
+
+.pull-left{
+  float:left;
 }
 
 .material-icons {
@@ -24,3 +35,6 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+/*************************nav*****************************/
+
