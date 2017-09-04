@@ -4,12 +4,21 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PMComponent} from './pm/pm.component';
-import {MdDialogModule, MdSidenavModule, MdSnackBarModule, MdToolbarModule} from '@angular/material';
+import {
+  MdDialogModule,
+  MdIconModule,
+  MdListModule,
+  MdSidenavModule,
+  MdSnackBarModule,
+  MdToolbarModule
+} from '@angular/material';
+import {SidebarListComponent} from './sidebar-list/sidebar-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PMComponent,
+    SidebarListComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +27,9 @@ import {MdDialogModule, MdSidenavModule, MdSnackBarModule, MdToolbarModule} from
     MdSidenavModule,
     MdToolbarModule,
     MdDialogModule,
-    MdSnackBarModule
+    MdSnackBarModule,
+    MdListModule,
+    MdIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
