@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {PlanManagementComponent} from './plan-management/plan-management.component';
+import {PMComponent} from './pm/pm.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/planManagement', pathMatch: 'full' },
-  {path: 'planManagement', component: PlanManagementComponent}
+  {path: '', redirectTo: '/pm', pathMatch: 'full'},
+  {path: 'pm', component: PMComponent}
 
 ];
 

@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
+import {Component, OnInit} from '@angular/core';
+import {MdDialog, MdSnackBar} from '@angular/material';
 
 @Component({
   selector: 'app-plan-management',
-  templateUrl: './plan-management.component.html',
-  styleUrls: ['./plan-management.component.css']
+  templateUrl: './pm.component.html',
+  styleUrls: ['./pm.component.css']
 })
-export class PlanManagementComponent implements OnInit {
+export class PMComponent implements OnInit {
 
     isDarkTheme: boolean = false;
   lastDialogResult: string;
@@ -26,7 +26,6 @@ export class PlanManagementComponent implements OnInit {
     }, 200);
   }
 
-  
 
   showSnackbar() {
     this._snackbar.open('YUM SNACKS', 'CHEW');
