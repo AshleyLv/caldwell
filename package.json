@@ -5,13 +5,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "start-i18n": "ng serve -o --aot --i18n-file src/assets/locale/messages.zh-CN.xlf --i18n-format xlf --locale zh-CN",
+    "start-i18n": "ng serve -o --aot --i18n-file=src/assets/locale/messages.zh-CN.xlf --i18n-format=xlf --locale=zh-CN",
     "build": "ng build",
-    "build-i18n": "ng build --aot --i18n-file src/assets/locale/messages.zh-CN.xlf --i18n-format xlf --locale zh-CN",
+    "build-i18n": "ng build --output-path=dist/cn --aot --i18n-file=src/assets/locale/messages.zh-CN.xlf --i18n-format=xlf --locale=zh-CN",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "i18n": "ng-xi18n --i18nFormat=xlf"
+    "i18n": "ng xi18n --output-path src/assets/locale --outFile=messages.zh-CN.xlf"
   },
   "private": true,
   "dependencies": {

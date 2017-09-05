@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
-  <file original="ng.template" id="ngi18n">
-    <unit id="my-plan">
-      <notes>
-        <note category="location">src/app/sidebar-list/sidebar-list.component.ts:3</note>
-      </notes>
-      <segment>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="my-plan" datatype="html">
         <source>My Plan</source>
         <target>我的计划</target>
-      </segment>
-    </unit>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sidebar-list/sidebar-list.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="current-plan" datatype="html">
+        <source>Current Plan</source>
+        <target>当前计划</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sidebar-list/sidebar-list.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="schedule-today" datatype="html">
+        <source>Schedule Today</source>
+        <target>今日计划</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sidebar-list/sidebar-list.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="my-achievements" datatype="html">
+        <source>My Achivements</source>
+        <target>我的成就</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sidebar-list/sidebar-list.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="settings" datatype="html">
+        <source>Settings</source>
+        <target>设置</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/sidebar-list/sidebar-list.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+    </body>
   </file>
 </xliff>
