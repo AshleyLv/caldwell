@@ -10,15 +10,18 @@ import {
   MdListModule,
   MdSidenavModule,
   MdSnackBarModule,
-  MdToolbarModule
+  MdToolbarModule,
+  MdCardModule
 } from '@angular/material';
 import {SidebarListComponent} from './sidebar-list/sidebar-list.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PMComponent,
-    SidebarListComponent
+    SidebarListComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import {SidebarListComponent} from './sidebar-list/sidebar-list.component';
     MdDialogModule,
     MdSnackBarModule,
     MdListModule,
-    MdIconModule
+    MdIconModule,
+    MdCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
