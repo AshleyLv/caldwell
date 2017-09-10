@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {PMComponent} from './pm/pm.component';
+import {PMComponent} from './feature/pm/pm.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/pm', pathMatch: 'full'},
