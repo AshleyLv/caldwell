@@ -3,17 +3,14 @@ import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {PMComponent} from './feature/pm/pm.component';
 import {CommonModule} from './common/common.module';
-import {SidenavService} from './common/sidenav/sidenav.service';
 import {CoreModule} from './core/core.module';
-import {TodolistComponent} from './feature/todolist/todolist.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PMComponent,
-    TodolistComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,9 +19,10 @@ import {TodolistComponent} from './feature/todolist/todolist.component';
     CommonModule,
     CoreModule
   ],
-  providers: [SidenavService],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
 
 

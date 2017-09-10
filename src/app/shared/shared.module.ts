@@ -1,35 +1,14 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {
-  MdCardModule,
-  MdDialogModule,
-  MdIconModule,
-  MdListModule,
-  MdSidenavModule,
-  MdSnackBarModule,
-  MdToolbarModule
-} from '@angular/material';
+import {CollapseModule} from 'ngx-bootstrap';
 
 @NgModule({
   imports: [
     CommonModule,
-    MdSidenavModule,
-    MdToolbarModule,
-    MdDialogModule,
-    MdSnackBarModule,
-    MdListModule,
-    MdIconModule,
-    MdCardModule
+    CollapseModule
   ],
   exports: [
-    CommonModule,
-    MdSidenavModule,
-    MdToolbarModule,
-    MdDialogModule,
-    MdSnackBarModule,
-    MdListModule,
-    MdIconModule,
-    MdCardModule
+    CommonModule
   ],
   declarations: []
 })
