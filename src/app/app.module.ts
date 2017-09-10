@@ -4,38 +4,25 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PMComponent} from './pm/pm.component';
-import {
-  MdDialogModule,
-  MdIconModule,
-  MdListModule,
-  MdSidenavModule,
-  MdSnackBarModule,
-  MdToolbarModule,
-  MdCardModule
-} from '@angular/material';
-import {SidebarListComponent} from './sidebar-list/sidebar-list.component';
-import { TodolistComponent } from './todolist/todolist.component';
+import {CommonModule} from './common/common.module';
+import {SidenavService} from './common/sidenav/sidenav.service';
+import {CoreModule} from './core/core.module';
+import {TodolistComponent} from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PMComponent,
-    SidebarListComponent,
     TodolistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MdSidenavModule,
-    MdToolbarModule,
-    MdDialogModule,
-    MdSnackBarModule,
-    MdListModule,
-    MdIconModule,
-    MdCardModule
+    CommonModule,
+    CoreModule
   ],
-  providers: [],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

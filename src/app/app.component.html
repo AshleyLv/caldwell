@@ -1,15 +1,8 @@
+<app-toolbar></app-toolbar>
 <md-sidenav-container>
-  <md-sidenav #sidenav mode="push" class="app-sidebar">
-    <app-sidebar-list></app-sidebar-list>
+  <md-sidenav #sidenav md-component-id="sidenav" mode="push" class="app-sidebar">
+    <app-sidenav></app-sidenav>
   </md-sidenav>
-
-  <md-toolbar color="primary">
-    <button class="app-icon-button" (click)="sidenav.toggle()">
-      <i class="material-icons app-toolbar-menu">menu</i>
-    </button>
-    iGoals
-  </md-toolbar>
-
   <div class="app-content">
     <router-outlet></router-outlet>
   </div>

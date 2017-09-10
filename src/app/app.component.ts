@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
+import {MdSidenav} from '@angular/material';
+import {SidenavService} from './common/sidenav/sidenav.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  @ViewChild('sidenav') sidenav: MdSidenav;
+
+  constructor(private sidenavService: SidenavService) {
+    this.sidenavService.sidenavToggle.subscribe(() => this.sidenav.toggle());
+  }
 }
